@@ -1,0 +1,228 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Default font family */
+    /* line-height: 1.6;  */
+}
+.navBar {
+    background-color: #1f1f1f; /* Dark background */
+    padding: 20px;
+    /* border-radius: 18px; */
+    /* display: flex; */
+  }
+  .navLinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  .navLinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks a:hover {
+    color: red; /* Hover color */
+  }
+
+
+.logo{
+    background-color: rgb(214, 51, 37);
+    color: white;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(23,15, 69, 0.2), 0 6px 6px rgba(23, 15, 69, 0.2);
+    /* border-radius: 18px; */
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1{
+    padding: 40px;
+    font-family: cursive;
+    font-size: 3rem;
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+
+.logo{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.barberShop, .logo{
+    width: 100%;
+    height: auto;
+    /* border-radius: 18px; */
+}
+
+.barberShop{
+    border-radius: 18px;
+}
+@media all and (min-width: 767px){
+    .barberShop{
+    max-width: 89%;
+    }
+}
+
+#hero{
+    padding: 40px;
+    /* border: thin blue 3px; */
+    color:  black;
+    box-shadow: 0 10px 20px rgba(23, 15, 69, 0.2), 0 6px 6px rgba(0, 0, 255, 0.25);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.serviceContainer{
+    padding: 40px;
+    border: thin blue 3px;
+    color:  black;
+    box-shadow: 0 10px 20px rgba(23, 15, 69, 0.2), 0 6px 6px rgba(0, 0, 255, 0.25);
+    border-radius: 18px;
+
+}
+
+.priceContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.priceItem{
+    margin: 0;
+    width: 40%;
+    padding: 20px;
+    align-items: flex-start;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* .priceItem,.shaveItem{
+    align-self: center;
+
+} */
+
+@media all and (max-width: 767px){
+    .priceContainer, .priceItem{
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+#team{
+    padding-top: 20px;
+}
+#teamContainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column;
+    align-items: center; */
+    padding: 40px;
+    gap: 40px;
+    justify-content: center;
+}
+.barberPic{
+    width: 75%;
+}
+
+.barberPic, .teamItem{
+    width: 42.5%;
+    /* flex: auto; */
+    max-width: 100%;
+    padding-top: 40px;
+    box-shadow: 0 10px 20px rgba(23, 15, 69, 0.2), 0 6px 6px rgba(0, 0, 255, 0.25);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media all and (max-width: 767px){
+    #team, #teamContainer, .teamItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+}
+
+#testimonials{
+    padding: 40px;
+    margin: auto;
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(23, 15, 69, 0.2), 0 6px 6px rgba(0, 0, 255, 0.25);
+    border-radius: 18px;
+    text-align: center;
+}
+.hoursContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 60px;
+}
+.hoursItem{
+    text-align: center;
+}
+
+.walkIns{
+    margin-top: 40px;
+    padding: 40px;
+    margin: auto;
+    border: thin blue 3px;
+    color:  black;
+    box-shadow: 0 10px 20px rgba(23, 15, 69, 0.2), 0 6px 6px rgba(0, 0, 255, 0.25);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.address{
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+@media all and (max-width: 767px){
+   .address,.google-maps{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+
+   }
+}
