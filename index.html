@@ -1,99 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Premier Barbershop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier Barber Shop & Beauty Salon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navBar">
-            <ul class="navLinks">
-              <li><a href="#services">Services</a></li>
-              <li><a href="#team">Our Team</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#contact">Address</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <h1>Premier Barber Shop & Beauty Salon</h1>
-            <img class="barberShop" src="barberShop.jpeg" alt="">
-        </div>
-    </header>
-    
-      <section id="hero">
-        <h2 class="hero-item">Welcome to Our Barbershop</h2>
-        <p class="hero-item">We offer traditional and modern haircuts for men, women and children.</p>
-      </section>
 
-      <div id="services" class="serviceContainer">
-        <h2>Services</h2>
-        <ul class="priceContainer">
-          <li class="priceItem" class="hairItem">
-            <img src="hairCut2.jpeg" alt="">
-            <span>Haircuts $22</span>
-          </li>
-          <li class="priceItem" class="shaveItem">
-            <img src="barberShave2.jpeg" alt="">
-            <span>Shaves $15</span>
-          </li>
-          <li class="priceItem">
-            <img src="beardTrim.jpeg" alt="">
-            <span>Beard Trims $15</span>
-          </li>
-          <li class="priceItem">
-            <img src="hairStyling.jpeg" alt="">
-            <span>Hairstyling ~ $10</span>
-          </li>
-        </ul>
+  <!-- NAV -->
+  <nav class="nav" id="top">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-brand-mark">✦</span>
+        <span class="nav-brand-name">Premier</span>
       </div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#contact">Location</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Walk-ins Welcome</button>
+    </div>
+  </nav>
 
-      <h2 id="team">Our Team</h2>
-      <section id="teamContainer">
-        <div class="teamItem">
-          <img class="barberPic" src="barberSilhouette.avif" alt="Barber 1">
-          <h3>Martin</h3>
-          <p>Master Barber</p>
-          <span>832-340-5738</span>
-        </div>
-        <div class="teamItem">
-          <img class="barberPic" src="barberSilhouette.avif" alt="Barber 2">
-          <h3>Roberto</h3>
-          <p>Senior Barber</p>
-          <span>281-236-7583</span>
-        </div>
-      </section>
-    
-      <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonialItem">
-          <p>"Best barbershop in town! I always leave feeling fresh and confident."</p>
-          <span>- John D.</span>
-        </div>
-        <div class="testimonialItem">
-          <p>"The team here is amazing. They really know their stuff!"</p>
-          <span>- Sarah W.</span>
-        </div>
-      </section>
-    
-      <section class="walkIns">
-        <h2 class="walkIns-item">We are walk-ins only. No appointments. Come and see Us!</h2>
-      </section>
-      <div class="hoursContainer">
-        <h2>Hours of Operation</h2>
-        <ol class="hoursItem"><strong>Tuesday - Friday</strong></ol>
-        <ol class="hoursItem">10:00 am - 8:00 pm</ol>
-        <ol class="hoursItem"><strong>Saturday</strong></ol>
-        <ol class="hoursItem">9:00 am - 8:00 pm</ol>
-        <ol class="hoursItem"><strong>Sunday</strong></ol>
-        <ol class="hoursItem">9:00 am - 5:00 pm</ol>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="barberShop.jpeg" alt="Barber pole" class="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. Waller, Texas</p>
+      <h1 class="hero-title">
+        Premier<br>
+        <em>Barber Shop</em>
+      </h1>
+      <p class="hero-sub">&amp; Beauty Salon</p>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-icon">✦</span>
+        <span class="divider-line"></span>
       </div>
-      <section id= "contact" class="address">
-        <h2>Our Address</h2>
-        <span>2426 Main St. Waller, TX 77484</span>
-        <iframe class= "google-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6906.602301981796!2d-95.92659479999999!3d30.0569011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646cd110cf703b3%3A0x6cc5ad1f746e0342!2s2426%20Main%20St%2C%20Waller%2C%20TX%2077484!5e0!3m2!1sen!2sus!4v1715208477607!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p class="hero-tagline">Traditional cuts. Modern craft. Walk-ins always welcome.</p>
+      <a href="#services" class="hero-btn">View Services</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <span class="scroll-arrow">↓</span>
+    </div>
+  </section>
 
-      </section>
+  <!-- INTRO STRIP -->
+  <div class="strip strip-red">
+    <div class="strip-inner">
+      <span>Haircuts</span>
+      <span class="strip-dot">✦</span>
+      <span>Hot Shaves</span>
+      <span class="strip-dot">✦</span>
+      <span>Beard Trims</span>
+      <span class="strip-dot">✦</span>
+      <span>Hair Styling</span>
+      <span class="strip-dot">✦</span>
+      <span>Men &middot; Women &middot; Children</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section section-cream" id="services">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Our Services</h2>
+        <div class="title-rule"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="hairCut2.jpeg" alt="Haircut">
+            <div class="service-price-badge">$22</div>
+          </div>
+          <div class="service-card-body">
+            <h3>Haircuts</h3>
+            <p>Classic and contemporary cuts for men, women, and children. Every shape, every style.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="barberShave2.jpeg" alt="Hot Shave">
+            <div class="service-price-badge">$15</div>
+          </div>
+          <div class="service-card-body">
+            <h3>Hot Shaves</h3>
+            <p>Traditional straight-razor shaves with hot towel treatment. The full experience.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="beardTrim.jpeg" alt="Beard Trim">
+            <div class="service-price-badge">$15</div>
+          </div>
+          <div class="service-card-body">
+            <h3>Beard Trims</h3>
+            <p>Sculpted lines, clean edges. Keep your beard looking sharp and intentional.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="hairStyling.jpeg" alt="Hair Styling">
+            <div class="service-price-badge">~$10</div>
+          </div>
+          <div class="service-card-body">
+            <h3>Hair Styling</h3>
+            <p>Finishing, product, and precision styling to complete your look.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section-navy" id="team">
+    <div class="section-inner">
+      <div class="section-header section-header-light">
+        <p class="section-eyebrow eyebrow-gold">The Craftsmen</p>
+        <h2 class="section-title title-light">Our Team</h2>
+        <div class="title-rule rule-gold"></div>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="barberSilhouette.avif" alt="Martin">
+            <div class="team-badge">Master Barber</div>
+          </div>
+          <div class="team-card-body">
+            <h3>Martin</h3>
+            <p class="team-role">Master Barber</p>
+            <a href="tel:8323405738" class="team-phone">832-340-5738</a>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-img-wrap">
+            <img src="barberSilhouette.avif" alt="Roberto">
+            <div class="team-badge">Senior Barber</div>
+          </div>
+          <div class="team-card-body">
+            <h3>Roberto</h3>
+            <p class="team-role">Senior Barber</p>
+            <a href="tel:2812367583" class="team-phone">281-236-7583</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section-cream" id="testimonials">
+    <div class="section-inner">
+      <div class="section-header">
+        <p class="section-eyebrow">What Clients Say</p>
+        <h2 class="section-title">Testimonials</h2>
+        <div class="title-rule"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-mark">&ldquo;</div>
+          <p class="testimonial-text">Best barbershop in town! I always leave feeling fresh and confident.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-author">— John D.</span>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-mark">&ldquo;</div>
+          <p class="testimonial-text">The team here is amazing. They really know their stuff!</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <span class="testimonial-author">— Sarah W.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WALK-INS BANNER -->
+  <div class="walkins-banner">
+    <div class="walkins-inner">
+      <div class="walkins-pole">
+        <div class="pole-stripe pole-stripe-1"></div>
+        <div class="pole-stripe pole-stripe-2"></div>
+        <div class="pole-stripe pole-stripe-3"></div>
+      </div>
+      <div class="walkins-text">
+        <p class="walkins-label">No Appointments Needed</p>
+        <h2 class="walkins-heading">Walk-ins Only — Come Right In</h2>
+        <p class="walkins-sub">Just show up. We'll take care of the rest.</p>
+      </div>
+      <div class="walkins-pole">
+        <div class="pole-stripe pole-stripe-1"></div>
+        <div class="pole-stripe pole-stripe-2"></div>
+        <div class="pole-stripe pole-stripe-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOURS + LOCATION -->
+  <section class="section section-navy" id="hours">
+    <div class="section-inner">
+      <div class="hours-address-grid">
+
+        <div class="hours-block">
+          <div class="section-header section-header-light section-header-tight">
+            <p class="section-eyebrow eyebrow-gold">Come See Us</p>
+            <h2 class="section-title title-light">Hours</h2>
+            <div class="title-rule rule-gold"></div>
+          </div>
+          <div class="hours-list">
+            <div class="hours-row">
+              <span class="hours-day">Tuesday – Friday</span>
+              <span class="hours-sep"></span>
+              <span class="hours-time">10:00 am – 8:00 pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-sep"></span>
+              <span class="hours-time">9:00 am – 8:00 pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-sep"></span>
+              <span class="hours-time">9:00 am – 5:00 pm</span>
+            </div>
+            <div class="hours-row hours-closed">
+              <span class="hours-day">Monday</span>
+              <span class="hours-sep"></span>
+              <span class="hours-time">Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="address-block" id="contact">
+          <div class="section-header section-header-light section-header-tight">
+            <p class="section-eyebrow eyebrow-gold">Find Us</p>
+            <h2 class="section-title title-light">Location</h2>
+            <div class="title-rule rule-gold"></div>
+          </div>
+          <p class="address-text">2426 Main St.<br>Waller, TX 77484</p>
+          <div class="map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6906.602301981796!2d-95.92659479999999!3d30.0569011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646cd110cf703b3%3A0x6cc5ad1f746e0342!2s2426%20Main%20St%2C%20Waller%2C%20TX%2077484!5e0!3m2!1sen!2sus!4v1715208477607!5m2!1sen!2sus"
+              width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-mark">✦</span>
+        <span class="footer-name">Premier Barber Shop &amp; Beauty Salon</span>
+      </div>
+      <p class="footer-addr">2426 Main St. &middot; Waller, TX 77484</p>
+      <p class="footer-copy">&copy; 2026 Premier Barber Shop. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
